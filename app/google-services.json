@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "349213095170",
+    "firebase_url": "https://it-talk-8d15a-default-rtdb.firebaseio.com",
+    "project_id": "it-talk-8d15a",
+    "storage_bucket": "it-talk-8d15a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349213095170:android:761ccbdff0ff770a317e1b",
+        "android_client_info": {
+          "package_name": "com.curiousdaya.ittalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349213095170-r34i0r9qp9rkq3fudujhlaocj96gfv36.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.curiousdaya.ittalk",
+            "certificate_hash": "66133b8a6abac84e96985e0d0e1c0f09c71ab54b"
+          }
+        },
+        {
+          "client_id": "349213095170-g0kt0nfc0qlo6892tcustgj0l8u51vmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVwhSIIk06oRZoQR1CQGvWq6DCRGN5nFI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349213095170-g0kt0nfc0qlo6892tcustgj0l8u51vmc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

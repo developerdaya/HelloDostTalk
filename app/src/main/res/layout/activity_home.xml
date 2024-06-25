@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/project_black"
+    tools:context=".ui.home.HomeActivity">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/logo_profile"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="@dimen/_16ssp"
+        android:elevation="@dimen/_5sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user"
+        app:layout_constraintBottom_toTopOf="@+id/viewPagerHome2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mToggleLayout"
+        app:riv_border_color="@color/light_blue"
+        app:riv_corner_radius="100dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/share"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_16ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/mToggleLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mToggleLayout"
+        app:srcCompat="@drawable/share_1" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mToggleLayout"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:background="@drawable/bg_round_toggle"
+        android:padding="@dimen/_2sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/wifi1"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@drawable/bg_round_50"
+            android:elevation="@dimen/_5sdp"
+            android:padding="@dimen/_3sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wifi"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:riv_border_color="@color/light_blue"
+            app:riv_corner_radius="100dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/wifi2"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@drawable/bg_round_50"
+            android:elevation="@dimen/_5sdp"
+            android:padding="@dimen/_3sdp"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            android:src="@drawable/wifi"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:riv_border_color="@color/light_blue"
+            app:riv_corner_radius="100dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubrik_medium_c"
+        android:text="Online"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:textColor="@color/light_white_1"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toTopOf="@+id/viewPagerHome2"
+        app:layout_constraintEnd_toStartOf="@+id/mToggleLayout"
+        app:layout_constraintTop_toTopOf="@+id/mToggleLayout" />
+
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerHome2"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mToggleLayout" />
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mProgramming"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:drawableStart="@drawable/baseline_computer_24"
+        android:drawablePadding="@dimen/_5sdp"
+        android:text="Top 20 Programming Skills"
+        android:textColor="@color/light_white_1"
+        android:textSize="@dimen/_13ssp"
+        app:drawableTint="@color/brown_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPagerHome2" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginHorizontal="@dimen/_12ssp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/light_blue"
+        app:layout_constraintTop_toBottomOf="@+id/mProgramming" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCoding"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_30sdp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/bottomLayout"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:spanCount="3"
+        tools:itemCount="6"
+        tools:layout_editor_absoluteX="18dp"
+        tools:listitem="@layout/programming_layout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_25sdp"
+        android:background="@drawable/bg_round11"
+        android:paddingTop="@dimen/_10sdp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTalk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineHeight="@dimen/_20sdp"
+            android:text="Connect to Stanger "
+            android:textColor="@color/light_white"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:lineHeight="@dimen/_20sdp"
+            android:text="28 Online"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTalk"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvTalk"
+            app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/call" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+

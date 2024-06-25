@@ -1,0 +1,5 @@
+<!-- res/drawable/shape_with_simulated_inner_shadow.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#03AE0A"/>
+            <corners android:radius="25dp"/>
+</shape>

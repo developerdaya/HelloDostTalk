@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/project_black"
+    tools:context=".ui.profile.ProfileActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/topImage"
+            android:layout_width="600dp"
+            android:layout_height="600dp"
+            android:layout_marginTop="-210dp"
+            android:alpha="0.7"
+            android:background="@drawable/bg_round7"
+            android:rotationX="-22"
+            android:rotationY="-22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:scaleType="centerCrop"
+        app:riv_border_width="4dp"
+            android:elevation="@dimen/_5sdp"
+        app:riv_border_color="@color/light_blue"
+        android:src="@drawable/user"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_80sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/topImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:riv_corner_radius="100dp" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivPattern2"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginBottom="@dimen/_90sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:rotation="90"
+            android:src="@drawable/pattern"
+            android:tint="@color/white_shade"
+            app:layout_constraintBottom_toBottomOf="@+id/ivProfile"
+            app:layout_constraintStart_toStartOf="@+id/ivProfile" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivPattern3"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:rotation="270"
+            android:src="@drawable/pattern"
+            android:tint="@color/white_shade"
+            app:layout_constraintBottom_toTopOf="@+id/view2"
+            app:layout_constraintEnd_toEndOf="@+id/view2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubrik_medium_c"
+        android:text=""
+        android:layout_marginStart="-20dp"
+        android:textColor="@color/light_white"
+        android:textSize="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@+id/ivProfile"
+        app:layout_constraintTop_toBottomOf="@+id/ivProfile"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text=""
+        android:textColor="@color/light_white"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        app:layout_constraintStart_toStartOf="@+id/mUserName"
+        app:layout_constraintTop_toBottomOf="@+id/mUserName"
+        />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_12ssp"
+        android:background="@color/light_blue"
+        app:layout_constraintTop_toBottomOf="@+id/mUserEmail"/>
+
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mShareApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="16dp"
+        android:drawableStart="@drawable/baseline_share_24"
+        app:drawableTint="@color/light_white_1"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="Share App"
+        android:textColor="@color/light_white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@id/view2" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mRateApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/baseline_star_rate_24"
+        android:drawablePadding="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="Rate App"
+        app:drawableTint="@color/light_white_1"
+        android:textColor="@color/light_white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="@+id/mShareApp"
+        app:layout_constraintTop_toBottomOf="@id/mShareApp" />
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mAboutUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/baseline_lightbulb_circle_24"
+        android:drawablePadding="16dp"
+        app:drawableTint="@color/light_white_1"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="About Us"
+        android:textColor="@color/light_white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="@+id/mRateApp"
+        app:layout_constraintTop_toBottomOf="@id/mRateApp" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/baseline_logout_24"
+        android:drawablePadding="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        app:drawableTint="@color/light_white_1"
+        android:text="Logout"
+        android:textColor="@color/light_white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="@+id/mAboutUs"
+        app:layout_constraintTop_toBottomOf="@id/mAboutUs" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/shareWhatsapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/rubrik_medium_c"
+        android:paddingHorizontal="@dimen/_45sdp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:text="Share on Whatsapp"
+        android:textColor="@color/light_white"
+        android:background="@drawable/bg_wp"
+        android:drawableTint="@color/white"
+        android:textSize="@dimen/_13ssp"
+        android:paddingVertical="@dimen/_7ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mLogout" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivWhatsapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/whatsapp"
+        android:tint="@color/white"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:layout_constraintTop_toTopOf="@+id/shareWhatsapp"
+        app:layout_constraintBottom_toBottomOf="@+id/shareWhatsapp"
+        app:layout_constraintStart_toStartOf="@+id/shareWhatsapp"
+        />
+
+
+    <View
+        android:id="@+id/mView2"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/light_blue"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="@id/shareWhatsapp"
+        app:layout_constraintTop_toBottomOf="@id/shareWhatsapp" />
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mAppVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/rubrik_light_h"
+        android:text="App Version 1.0"
+        android:textColor="#A9B2AE"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mView2" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
